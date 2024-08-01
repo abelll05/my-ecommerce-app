@@ -1,0 +1,169 @@
+/* src/index.css */
+
+/* Reseteo básico de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo básico para el body */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #003366; /* Azul oscuro */
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #fff; /* Texto blanco */
+  margin: 0 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para el encabezado */
+.header {
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 20px;
+}
+
+/* Tarjeta blanca */
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para botones */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Lista de productos */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px; /* Altura fija para imágenes intermedias */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Página del producto */
+.product-page img {
+  width: 100%;
+  max-width: 600px; /* Ancho máximo para imágenes grandes */
+  height: auto;
+}
+
+/* Carrito de compras */
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item img {
+  width: 120px; /* Tamaño intermedio para las imágenes del carrito */
+  height: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-actions button {
+  background-color: #dc3545;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 10px;
+}
+
+.cart-item-actions button:hover {
+  background-color: #c82333;
+}
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px;
+}

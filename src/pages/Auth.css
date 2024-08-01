@@ -1,0 +1,30 @@
+/* src/pages/Auth.css */
+
+.auth-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-container label {
+    margin-bottom: 10px;
+  }
+  
+  .auth-container input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .auth-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
