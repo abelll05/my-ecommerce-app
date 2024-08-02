@@ -1,7 +1,6 @@
-// src/components/NavBar.jsx
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCart } from '../context/CartContext'; // Actualiza la ruta aquí
+import { useCart } from '../context/CartContext'; 
 
 const NavBar = () => {
   const { cart } = useCart();
