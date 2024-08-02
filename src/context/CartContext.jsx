@@ -1,19 +1,14 @@
-// src/context/CartContext.jsx
-
 import React, { createContext, useContext, useReducer } from 'react';
 
-// Define el estado inicial del carrito
 const initialState = {
   items: [],
 };
 
-// Define las acciones que se pueden realizar en el carrito
 const cartReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_TO_CART':
       const existingItemIndex = state.items.findIndex(item => item.id === action.payload.id);
       if (existingItemIndex >= 0) {
-        // Si el producto ya está en el carrito, actualiza la cantidad
         const updatedItems = [...state.items];
         updatedItems[existingItemIndex].quantity += action.payload.quantity;
         return {
@@ -21,7 +16,6 @@ const cartReducer = (state, action) => {
           items: updatedItems,
         };
       } else {
-        // Si el producto no está en el carrito, añádelo con la cantidad
         return {
           ...state,
           items: [...state.items, action.payload],
@@ -39,10 +33,8 @@ const cartReducer = (state, action) => {
   }
 };
 
-// Crea el contexto del carrito
 const CartContext = createContext();
 
-// Proveedor del contexto del carrito
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
@@ -69,5 +61,4 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-// Hook personalizado para usar el contexto del carrito
 export const useCart = () => useContext(CartContext);
