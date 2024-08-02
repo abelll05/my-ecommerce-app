@@ -1,8 +1,6 @@
-// src/pages/Cart.jsx
-
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
-import './Cart.css'; // Asegúrate de que este archivo existe y tiene los estilos necesarios
+import './Cart.css'; 
 
 const Cart = () => {
   const { state, removeFromCart } = useCart();
@@ -13,12 +11,10 @@ const Cart = () => {
     email: ''
   });
 
-  // Calcular el total del carrito
   const calculateTotal = () => {
     return state.items.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
-  // Manejar el cambio en el formulario
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -27,12 +23,10 @@ const Cart = () => {
     });
   };
 
-  // Manejar el envío del formulario
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí podrías agregar la lógica para procesar el pedido
     alert('Compra realizada con éxito');
-    setIsCheckout(false); // Cierra el formulario después de la compra
+    setIsCheckout(false); 
   };
 
   return (

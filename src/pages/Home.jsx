@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
@@ -19,13 +18,13 @@ const products = [
     id: 1,
     title: 'Jordan One Take 5',
     image: image1,
-    price: 175.999, // Asegúrate de agregar el precio aquí si es necesario
+    price: 175.999, 
   },
   {
     id: 2,
     title: 'Jordan Nu Retro 1 Low',
     image: image2,
-    price: 189.999, // Asegúrate de agregar el precio aquí si es necesario
+    price: 189.999, 
   },
   {
     id: 3,

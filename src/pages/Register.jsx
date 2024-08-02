@@ -1,8 +1,6 @@
-// src/pages/Register.jsx
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Auth.css'; // Asegúrate de tener este archivo para los estilos
+import './Auth.css';
 
 const Register = ({ onRegister }) => {
   const [formData, setFormData] = useState({
@@ -24,10 +22,8 @@ const Register = ({ onRegister }) => {
       alert('Passwords do not match');
       return;
     }
-    // Aquí deberías registrar al usuario en tu backend
-    // Simulación de registro exitoso
     localStorage.setItem('auth', JSON.stringify({ email: formData.email }));
-    onRegister(); // Actualiza el estado de autenticación en la aplicación
+    onRegister();
     navigate('/');
   };
 

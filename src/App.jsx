@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
@@ -65,10 +63,10 @@ function App() {
           {isAuthenticated ? (
             <button onClick={handleLogout}>Logout</button>
           ) : (
-            <div className="auth-links">
+            <>
               <a href="/login" onClick={(e) => { e.preventDefault(); navigate('/login'); }}>Login</a>
               <a href="/register" onClick={(e) => { e.preventDefault(); navigate('/register'); }}>Register</a>
-            </div>
+            </>
           )}
         </div>
         <form onSubmit={handleSearchSubmit} className="search-form">

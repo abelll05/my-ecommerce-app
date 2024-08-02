@@ -1,36 +1,28 @@
-/* src/App.css */
-
-/* Contenedor principal de la aplicación */
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asegura que el contenedor cubra al menos toda la altura de la pantalla */
+  min-height: 100vh; 
 }
 
-/* Estilos para la barra de navegación */
 .navbar {
-  background-color: #002f6c; /* Color de fondo del navbar */
+  background-color: #002f6c; 
   color: white;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 0px; /* Asegura que los bordes sean rectos */
-  border-bottom: 2px solid #004080; /* Línea de borde inferior para el navbar */
-  box-shadow: none; /* Asegura que no haya sombras que puedan hacer parecer los bordes redondeados */
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+  border-radius: 0px; 
+  border-bottom: 2px solid #004080; 
+  box-shadow: none; 
 }
 
-/* Estilos para el ícono de inicio */
 .home-icon img {
   cursor: pointer;
 }
 
-/* Estilos para los enlaces de navegación */
 .nav-links {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Permite que los enlaces se envuelvan en pantallas más pequeñas */
 }
 
 .nav-links a {
@@ -39,83 +31,41 @@
   margin: 0 15px;
 }
 
-.auth-links {
-  display: flex;
-  align-items: center;
-  margin-right: 20px; /* Espacio entre enlaces de autenticación y el buscador */
-}
-
 .search-form {
   display: flex;
-  margin-left: auto; /* Empuja el buscador hacia la derecha */
-  margin-top: 10px; /* Espacio arriba en pantallas más pequeñas */
-  width: 100%; /* Asegura que el formulario de búsqueda ocupe el ancho completo en pantallas pequeñas */
-  justify-content: center; /* Centra el formulario en pantallas más pequeñas */
 }
 
-/* Estilos para el input de búsqueda */
 .search-form input {
   padding: 5px;
   border: none;
-  border-radius: 0px; /* Asegura que los bordes sean rectos */
-  flex: 1; /* Permite que el input ocupe el espacio disponible */
+  border-radius: 0px; 
 }
 
-/* Estilos para el botón de búsqueda */
 .search-form button {
   padding: 5px 10px;
   border: none;
-  background-color: #004080; /* Color del botón */
+  background-color: #004080; 
   color: white;
   cursor: pointer;
-  border-radius: 0px; /* Asegura que los bordes sean rectos */
+  border-radius: 0px; 
 }
 
-/* Estilos para el botón de búsqueda en hover */
 .search-form button:hover {
-  background-color: #003366; /* Color del botón en hover */
+  background-color: #003366; 
 }
 
-/* Estilos para el pie de página (footer) */
 .footer {
-  background-color: #002f6c; /* Color de fondo del footer */
+  background-color: #002f6c; 
   color: white;
   padding: 10px 20px;
   text-align: center;
-  margin-top: auto; /* Asegura que el footer esté al fondo */
-  border-top: 0px solid #004080; /* Línea de borde superior para el footer */
-  border-radius: 0px; /* Asegura que los bordes sean rectos */
-  box-shadow: none; /* Asegura que no haya sombras que puedan hacer parecer los bordes redondeados */
+  margin-top: auto; 
+  border-top: 0px solid #004080; 
+  border-radius: 0px; 
+  box-shadow: none; 
 }
 
-/* Estilos específicos para los enlaces de inicio de sesión en mensajes */
 .login-message a {
-  color: black; /* Color del enlace "login" en el mensaje */
-  text-decoration: underline; /* Subrayar el enlace */
-}
-
-/* Media Queries para dispositivos móviles */
-@media (max-width: 768px) {
-  .nav-links, .auth-links {
-    flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
-    margin: 0;
-  }
-  
-  .nav-links a, .auth-links a, .auth-links button {
-    margin: 5px 0; /* Reduce el margen en pantallas pequeñas */
-  }
-  
-  .search-form {
-    margin-top: 10px; /* Añade un margen arriba en pantallas más pequeñas */
-    width: 100%; /* Asegura que el formulario de búsqueda ocupe el ancho completo */
-    justify-content: center; /* Centra el formulario en pantallas más pequeñas */
-  }
-  
-  .search-form input {
-    width: calc(100% - 80px); /* Ajusta el ancho del input considerando el ancho del botón */
-  }
-  
-  .search-form button {
-    width: 80px; /* Establece un ancho fijo para el botón */
-  }
+  color: black; 
+  text-decoration: underline; 
 }
