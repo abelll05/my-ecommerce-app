@@ -1,8 +1,6 @@
-// src/pages/Login.jsx
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Auth.css'; // Asegúrate de tener este archivo para los estilos
+import './Auth.css'; 
 
 const Login = ({ onLogin }) => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -15,10 +13,8 @@ const Login = ({ onLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí deberías validar el usuario con tu backend
-    // Simulación de autenticación exitosa
     localStorage.setItem('auth', JSON.stringify({ email: formData.email }));
-    onLogin(); // Actualiza el estado de autenticación en la aplicación
+    onLogin(); 
     navigate('/');
   };
 
