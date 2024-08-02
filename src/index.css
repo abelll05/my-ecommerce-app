@@ -1,13 +1,9 @@
-/* src/index.css */
-
-/* Reseteo básico de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo básico para el body */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -25,7 +21,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Contenedor principal */
 .container {
   width: 80%;
   max-width: 1200px;
@@ -33,7 +28,6 @@ a:hover {
   padding: 20px;
 }
 
-/* Barra de navegación */
 .navbar {
   background-color: #003366; /* Azul oscuro */
   padding: 10px;
@@ -54,14 +48,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Estilo para el encabezado */
 .header {
   padding: 20px;
   border-radius: 12px 12px 0 0;
   margin-bottom: 20px;
 }
 
-/* Tarjeta blanca */
 .card {
   background-color: #fff;
   color: #333;
@@ -70,7 +62,6 @@ a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para botones */
 button {
   background-color: #007bff;
   color: #fff;
@@ -86,21 +77,18 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Estilo para imágenes */
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Lista de productos */
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
-/* Tarjeta de producto */
 .product-card {
   background-color: #fff;
   border-radius: 8px;
@@ -115,19 +103,17 @@ img {
 
 .product-card img {
   width: 100%;
-  height: 200px; /* Altura fija para imágenes intermedias */
+  height: 200px; 
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* Página del producto */
 .product-page img {
   width: 100%;
-  max-width: 600px; /* Ancho máximo para imágenes grandes */
+  max-width: 600px; 
   height: auto;
 }
 
-/* Carrito de compras */
 .cart-item {
   display: flex;
   align-items: center;
@@ -136,7 +122,7 @@ img {
 }
 
 .cart-item img {
-  width: 120px; /* Tamaño intermedio para las imágenes del carrito */
+  width: 120px; 
   height: 120px;
   object-fit: cover;
   margin-right: 20px;
