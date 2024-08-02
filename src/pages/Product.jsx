@@ -1,9 +1,7 @@
-// src/pages/Product.jsx
-
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { products } from '../data/products'; // Asegúrate de que esta ruta sea correcta
-import { useCart } from '../context/CartContext'; // Importa el hook useCart
+import { products } from '../data/products'; 
+import { useCart } from '../context/CartContext';
 import './Product.css';
 
 const Product = () => {
@@ -11,7 +9,7 @@ const Product = () => {
   const product = products.find((p) => p.id === parseInt(id));
   const [zoom, setZoom] = useState(false);
   const [zoomPosition, setZoomPosition] = useState({ top: 0, left: 0 });
-  const { addToCart } = useCart(); // Usa el hook useCart para obtener addToCart
+  const { addToCart } = useCart(); 
 
   if (!product) {
     return <div>Product not found</div>;
@@ -59,10 +57,10 @@ const Product = () => {
                 position: 'absolute',
                 top: `${zoomPosition.top}%`,
                 left: `${zoomPosition.left}%`,
-                transform: 'translate(-50%, -50%)', // Ajusta la posición para centrar el cuadrado
-                border: '2px solid #000', // Puedes cambiar el color del borde si lo deseas
+                transform: 'translate(-50%, -50%)', 
+                border: '2px solid #000', 
                 borderRadius: '4px',
-                pointerEvents: 'none', // Evita que el cuadrado de zoom interfiera con el puntero
+                pointerEvents: 'none', 
               }}
             />
           )}
@@ -71,7 +69,7 @@ const Product = () => {
           <h2>{product.title}</h2>
           <p>{product.description}</p>
           <p>Price: ${product.price.toFixed(2)}</p>
-          <button onClick={() => addToCart(product)}>Add to Cart</button> {/* Asegúrate de que addToCart está definido */}
+          <button onClick={() => addToCart(product)}>Add to Cart</button> 
         </div>
       </div>
     </div>
