@@ -18,13 +18,13 @@ const products = [
     id: 1,
     title: 'Jordan One Take 5',
     image: image1,
-    price: 175999, 
+    price: 175999.00, 
   },
   {
     id: 2,
     title: 'Jordan Nu Retro 1 Low',
     image: image2,
-    price: 189999, 
+    price: 189999.00, 
   },
   {
     id: 3,
