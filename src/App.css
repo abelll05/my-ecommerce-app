@@ -11,13 +11,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 0px; /* Asegura que los bordes sean rectos */
-  border-bottom: 2px solid #004080; /* Línea de borde inferior para el navbar */
-  box-shadow: none; /* Asegura que no haya sombras que puedan hacer parecer los bordes redondeados */
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+  border-radius: 0px; 
+  border-bottom: 2px solid #004080; 
+  box-shadow: none; 
+  flex-wrap: wrap; 
 }
 
-/* Estilos para el ícono de inicio */
 .home-icon img {
   cursor: pointer;
 }
@@ -25,7 +24,7 @@
 .nav-links {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Permite que los enlaces se envuelvan en pantallas más pequeñas */
+  flex-wrap: wrap; 
 }
 
 .nav-links a {
@@ -37,22 +36,22 @@
 .auth-links {
   display: flex;
   align-items: center;
-  margin-right: 20px; /* Espacio entre enlaces de autenticación y el buscador */
+  margin-right: 20px; 
 }
 
 .search-form {
   display: flex;
-  margin-left: auto; /* Empuja el buscador hacia la derecha */
-  margin-top: 10px; /* Espacio arriba en pantallas más pequeñas */
-  width: 100%; /* Asegura que el formulario de búsqueda ocupe el ancho completo en pantallas pequeñas */
-  justify-content: center; /* Centra el formulario en pantallas más pequeñas */
+  margin-left: auto; 
+  margin-top: 10px; 
+  width: 100%; 
+  justify-content: center; 
 }
 
 .search-form input {
   padding: 5px;
   border: none;
-  border-radius: 0px; /* Asegura que los bordes sean rectos */
-  flex: 1; /* Permite que el input ocupe el espacio disponible */
+  border-radius: 0px; 
+  flex: 1; 
 }
 
 .search-form button {
@@ -80,32 +79,31 @@
 }
 
 .login-message a {
-  color: black; /* Color del enlace "login" en el mensaje */
-  text-decoration: underline; /* Subrayar el enlace */
+  color: black; 
+  text-decoration: underline; 
 }
 
-/* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
   .nav-links, .auth-links {
-    flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+    flex-direction: column; 
     margin: 0;
   }
   
   .nav-links a, .auth-links a, .auth-links button {
-    margin: 5px 0; /* Reduce el margen en pantallas pequeñas */
+    margin: 5px 0; 
   }
   
   .search-form {
-    margin-top: 10px; /* Añade un margen arriba en pantallas más pequeñas */
-    width: 100%; /* Asegura que el formulario de búsqueda ocupe el ancho completo */
-    justify-content: center; /* Centra el formulario en pantallas más pequeñas */
+    margin-top: 10px; 
+    width: 100%; 
+    justify-content: center; 
   }
   
   .search-form input {
-    width: calc(100% - 80px); /* Ajusta el ancho del input considerando el ancho del botón */
+    width: calc(100% - 80px); 
   }
   
   .search-form button {
-    width: 80px; /* Establece un ancho fijo para el botón */
+    width: 80px; 
   }
 }
