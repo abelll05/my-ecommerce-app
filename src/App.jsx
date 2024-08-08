@@ -44,8 +44,8 @@ function App() {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    setCurrentQuery(searchQuery); // Update currentQuery when search is submitted
-    navigate(`/search?query=${searchQuery}`); // Navigate with query
+    setCurrentQuery(searchQuery); 
+    navigate(`/search?query=${searchQuery}`); 
   };
 
   return (
