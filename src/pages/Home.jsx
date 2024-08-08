@@ -80,6 +80,7 @@ const Home = ({ searchQuery }) => {
   const navigate = useNavigate();
   const { addToCart } = useCart();
 
+  // Filtrado de productos según la consulta de búsqueda
   const filteredProducts = products.filter(product =>
     product.title.toLowerCase().includes(searchQuery.toLowerCase())
   );

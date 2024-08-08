@@ -1,0 +1,15 @@
+.search-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-container input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
@@ -12,7 +12,9 @@ import './App.css';
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [currentQuery, setCurrentQuery] = useState('');
   const navigate = useNavigate();
+  const location = useLocation();
   const { getTotalQuantity } = useCart();
 
   useEffect(() => {
@@ -42,7 +44,8 @@ function App() {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    navigate(`/search?query=${searchQuery}`);
+    setCurrentQuery(searchQuery); // Update currentQuery when search is submitted
+    navigate(`/search?query=${searchQuery}`); // Navigate with query
   };
 
   return (
@@ -80,7 +83,8 @@ function App() {
         </form>
       </nav>
       <Routes>
-        <Route path="/" element={<Home searchQuery={searchQuery} />} />
+        <Route path="/" element={<Home searchQuery={currentQuery} />} />
+        <Route path="/search" element={<Home searchQuery={currentQuery} />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/cart" element={
           isAuthenticated ? <Cart /> : <p className="login-message">Please <a href="/login">login</a> to make a purchase.</p>

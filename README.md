@@ -22,4 +22,8 @@ El desafío elegido fue crear una aplicación de comercio electrónico con las s
 - **Vite:** Bundler rápido y liviano para desarrollo y construcción.
 - **React Router DOM:** Manejo de rutas y navegación.
 - **ESLint:** Herramienta para identificar y reportar patrones encontrados en el código JavaScript/JSX.
+<<<<<<< HEAD
 - **Vercel:** Plataforma de despliegue para aplicaciones front-end.
+=======
+- **Vercel:** Plataforma de despliegue para aplicaciones front-end.
+>>>>>>> 548b5f724ebd776fa87501502a7fabc4129f4de7
