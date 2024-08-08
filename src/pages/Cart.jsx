@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
-import './Cart.css'; 
+import './Cart.css'; // Asegúrate de que este archivo existe y tiene los estilos necesarios
 
 const Cart = () => {
   const { state, removeFromCart } = useCart();

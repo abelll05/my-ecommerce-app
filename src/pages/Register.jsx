@@ -23,7 +23,7 @@ const Register = ({ onRegister }) => {
       return;
     }
     localStorage.setItem('auth', JSON.stringify({ email: formData.email }));
-    onRegister();
+    onRegister(); // Actualiza el estado de autenticación en la aplicación
     navigate('/');
   };
 

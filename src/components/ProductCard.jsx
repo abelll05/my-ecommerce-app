@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./ProductCard.css"; // Importación correcta
+import "./ProductCard.css"; 
 
 const ProductCard = ({ product, addToCart }) => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const ProductCard = ({ product, addToCart }) => {
   };
 
   const handleAddToCart = (e) => {
-    e.stopPropagation(); // Evita que el click en "Add to Cart" navegue al producto
+    e.stopPropagation(); 
     addToCart(product);
   };
 
